@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{357454F9-C983-4FF5-81A0-6BDE2AAEA264}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Nhom8.Win</RootNamespace>
+    <AssemblyName>Nhom8.Win</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Keyboard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.Schedule.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar.SuperGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.Instrumentation, Version=11.2.0.1, Culture=neutral, PublicKeyToken=bc4a9d761ea44ef0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.Instrumentation.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.SuperGrid.Design, Version=11.2.0.1, Culture=neutral, PublicKeyToken=1fea3f5d8d482bff, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.SuperGrid.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.TreeGX, Version=11.2.0.1, Culture=neutral, PublicKeyToken=cfcbd7476b2389d1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.TreeGX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBanMayTinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanMayTinh.Designer.cs">
+      <DependentUpon>frmBanMayTinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC\UcDoiAnhNen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UcDoiAnhNen.Designer.cs">
+      <DependentUpon>UcDoiAnhNen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcHoaDonNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UcHoaDonNhap.Designer.cs">
+      <DependentUpon>UcHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCKhachHang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCKhachHang.Designer.cs">
+      <DependentUpon>UCKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UcMatKhau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UcMatKhau.Designer.cs">
+      <DependentUpon>UcMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCNguoiDung.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCNguoiDung.Designer.cs">
+      <DependentUpon>UCNguoiDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCNhaCungCap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCNhaCungCap.Designer.cs">
+      <DependentUpon>UCNhaCungCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCNhanVien.Designer.cs">
+      <DependentUpon>UCNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCNhaSanXuat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCNhaSanXuat.Designer.cs">
+      <DependentUpon>UCNhaSanXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCPhanQuyen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCPhanQuyen.Designer.cs">
+      <DependentUpon>UCPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UCSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UCSanPham.Designer.cs">
+      <DependentUpon>UCSanPham.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBanMayTinh.resx">
+      <DependentUpon>frmBanMayTinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UC\UCSanPham.resx">
+      <DependentUpon>UCSanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\128px-Crystal_Clear_action_exit.svg.png" />
+    <Content Include="Resources\128px-Crystal_Clear_action_exit.svg1.png" />
+    <None Include="Resources\iconDienThoai1.png" />
+    <None Include="Resources\HoiDap11.png" />
+    <None Include="Resources\1_0301.png" />
+    <None Include="Resources\invoice-manager-icon1.png" />
+    <None Include="Resources\icon-contract1.png" />
+    <None Include="Resources\Class1.png" />
+    <None Include="Resources\SanPham1.png" />
+    <None Include="Resources\icon-bg-member1.png" />
+    <None Include="Resources\NhanVien1.png" />
+    <None Include="Resources\Nhà Sản Xuất1.png" />
+    <None Include="Resources\House2.png" />
+    <None Include="Resources\House1.png" />
+    <None Include="Resources\128px-Crystal_Clear_action_exit.svg11.png" />
+    <Content Include="Resources\16455696_smartphone-icon-donordrive.png" />
+    <Content Include="Resources\1_030.png" />
+    <Content Include="Resources\Actions-window-close-icon.png" />
+    <Content Include="Resources\Actions-window-close-icon1.png" />
+    <Content Include="Resources\Add.png" />
+    <Content Include="Resources\BaoHanhSp.png" />
+    <Content Include="Resources\bút.png" />
+    <Content Include="Resources\catalog-icon.png" />
+    <Content Include="Resources\Class.png" />
+    <Content Include="Resources\close_blue.png" />
+    <Content Include="Resources\Delete.png" />
+    <Content Include="Resources\doi_tac.png" />
+    <Content Include="Resources\GetArticleImage.jpg" />
+    <None Include="Resources\iPhoto1.png" />
+    <None Include="Resources\GetArticleImage1.jpg" />
+    <Content Include="Resources\HoiDap.png" />
+    <Content Include="Resources\HoiDap1.png" />
+    <Content Include="Resources\House.png" />
+    <Content Include="Resources\icon-bg-member.png" />
+    <Content Include="Resources\icon-contract.png" />
+    <Content Include="Resources\iconDienThoai.png" />
+    <Content Include="Resources\IconGioiThieu.png" />
+    <Content Include="Resources\iconlogin.png" />
+    <Content Include="Resources\invoice-manager-icon.png" />
+    <Content Include="Resources\iPhoto.png" />
+    <Content Include="Resources\kho-hang.png" />
+    <Content Include="Resources\mankey.png" />
+    <None Include="Resources\mankey1.png" />
+    <Content Include="Resources\NhanVien.png" />
+    <Content Include="Resources\NhaPhatTriển.png" />
+    <Content Include="Resources\Nhà Sản Xuất.png" />
+    <Content Include="Resources\Pie Diagram.png" />
+    <Content Include="Resources\Product Key Finder.png" />
+    <None Include="Resources\Product Key Finder1.png" />
+    <Content Include="Resources\SanPham.png" />
+    <Content Include="Resources\save-as.png" />
+    <Content Include="Resources\Shopping cart.png" />
+    <Content Include="Resources\Thoát.png" />
+    <Content Include="Resources\TimKiem.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

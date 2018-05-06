@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhom8.Servivce", "Nhom8.Servivce\Nhom8.Servivce.csproj", "{4635F2AF-1662-40D9-8E36-B4D70D3535B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nhom8.Win", "Nhom8.Win\Nhom8.Win.csproj", "{357454F9-C983-4FF5-81A0-6BDE2AAEA264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4635F2AF-1662-40D9-8E36-B4D70D3535B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4635F2AF-1662-40D9-8E36-B4D70D3535B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4635F2AF-1662-40D9-8E36-B4D70D3535B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4635F2AF-1662-40D9-8E36-B4D70D3535B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{357454F9-C983-4FF5-81A0-6BDE2AAEA264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{357454F9-C983-4FF5-81A0-6BDE2AAEA264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{357454F9-C983-4FF5-81A0-6BDE2AAEA264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{357454F9-C983-4FF5-81A0-6BDE2AAEA264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D5F9418-9983-4BCA-B8D1-B4437F17C801}
+	EndGlobalSection
+EndGlobal
